@@ -6,6 +6,8 @@
     <script src="./static/js/menu.js"></script>
     <script src="./static/js/cart.js"></script>
     <script src="./static/js/server.js"></script>
+
+    <script src="./static/js/tiles.js"></script>
     <title>Menu</title>
     <link rel="icon" href="./static/images/bee.jpg">
     <link rel="stylesheet" href="./static/css/style.css">
@@ -45,6 +47,23 @@
             <button id="checkoutBtn">Do kasy</button>
         </div>
     </div>
+   <!-- Modal dla Present Simple -->
+   <div id="present-simple-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Present Simple</h2>
+        <p>Opis dla Present Simple...</p>
+    </div>
+</div>
+
+<!-- Modal dla Szybkiej Powtórki -->
+<div id="quick-review-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Szybka Powtórka</h2>
+        <p>Opis dla Szybkiej Powtórki...</p>
+    </div>
+</div>
 
     <nav class="section-nav">
         <ul>
@@ -59,15 +78,15 @@
     <section class="main-section-menu">
         <h2 id="free">Darmowe</h2>
         <div class="menu-items">
-            <div class="menu-item">
+            <div class="menu-item tile" data-tile-id="present-simple">
                 <img src="./static/images/present_simple.jpg" alt="Present Simple" class="note-img">
                 <div class="item-details">
                     <p class="product-name">Present Simple</p>
                     <p class="product-price">Cena: 0 zł</p>
                     <button type="button" class="add-to-cart-button" data-product-id="10">Dodaj do koszyka</button>
                 </div>
-            </div>
-            <div class="menu-item">
+            </div>            
+            <div class="menu-item tile" data-tile-id="quick-review">
                 <img src="./static/images/szybka_powtórka.png" alt="Szybka Powtórka" class="note-img">
                 <div class="item-details">
                     <p class="product-name">Szybka Powtórka</p>

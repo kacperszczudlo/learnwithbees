@@ -302,5 +302,13 @@ a:hover {
     z-index: 1000; /* Ustaw z-index na wysoką wartość, aby modal był na wierzchu */
 }
 
+.tile {
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
 
 
